@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="386.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FarmacistController">
+   <children>
+      <ListView fx:id="tableComenziOnorate" layoutX="404.0" layoutY="62.0" prefHeight="246.0" prefWidth="261.0" />
+      <TableView fx:id="tableComenziInAsteptare" layoutX="14.0" layoutY="62.0" prefHeight="246.0" prefWidth="314.0">
+        <columns>
+          <TableColumn fx:id="tableColumnMedicament" prefWidth="230.4000244140625" text="Medicament" />
+          <TableColumn fx:id="tableColumnCantitate" prefWidth="83.20001220703125" text="Cantitate" />
+        </columns>
+      </TableView>
+      <Button layoutX="582.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleDeconectare" text="Deconectare" />
+      <Button layoutX="14.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleOnorareComanda" prefHeight="26.0" prefWidth="314.0" text="Onorare comandă" />
+      <Label layoutX="478.0" layoutY="28.0" text="Comenzi onorate">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="28.0" text="Comenzi în așteptare">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

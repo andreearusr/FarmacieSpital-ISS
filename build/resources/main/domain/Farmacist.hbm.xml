@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="domain">
+    <class name="domain.Farmacist" table="Farmacist">
+        <id name="id">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="nume"
+                column="nume"
+                type="string"/>
+        <property
+                name="username"
+                column="username"
+                type="string"/>
+    </class>
+</hibernate-mapping>

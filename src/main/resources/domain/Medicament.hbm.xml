@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="domain">
+    <class name="domain.Medicament" table="Medicament">
+        <id name="id">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="denumire"
+                column="denumire"
+                type="java.lang.String"/>
+        <property
+                name="substantaActiva"
+                column="substantaActiva"
+                type="java.lang.String"/>
+        <property
+                name="gramaj"
+                column="gramaj"
+                type="java.lang.Double"/>
+        <property
+                name="stoc"
+                column="stoc"
+                type="java.lang.Integer"/>
+    </class>
+</hibernate-mapping>
